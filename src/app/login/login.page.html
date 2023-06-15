@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full" color="medium">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="email" type="text" name="email" required></ion-input>
+    </ion-item>
+    <ion-item lines="full" color="medium">
+      <ion-label position="floating">Mot de passe</ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block" (click)="login()" >Connexion</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Mot de passe oubliée?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

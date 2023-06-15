@@ -1,0 +1,55 @@
+@import '../../theme/pienu-variables.scss';
+
+.toolbar-custom {
+    padding: 30px 10px 10px;
+    color: var(--light);
+}
+
+.welcome-content {
+    position: relative;
+
+    .welcome-background-img {
+        position: absolute;
+        z-index: -10;
+        filter: brightness(60%);
+        height: 55%;
+        object-fit: cover;
+    }
+
+    .welcome-message {
+        background-color: #384454;
+        color: var(--light);
+        position: absolute;
+        padding: 20px 20px 30px;
+        bottom: 50px;
+        left: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 2px 2px 4px solid rgba(black, 0.75);
+    }
+    
+    ion-button.welcome-start-button {
+        --background: var(--ion-secondary-color);
+        --background-hover: var(--ion-secondary-color);
+        --color: var(--light);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        bottom: 30px;
+        right: 0;
+        --border-radius: 30px;
+
+        ion-icon {
+            margin-left: var(--ion-margin);
+        }
+    }
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+ion-menu-button {
+    --color: var(--light);
+}

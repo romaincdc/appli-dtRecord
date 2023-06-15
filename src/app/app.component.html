@@ -1,0 +1,29 @@
+<ion-app class="ion-side-menu">
+  <ion-menu side="start" menuId="first" contentId="content">
+    <ion-header>
+      <div class="user-section">
+        <img src="/assets/Image/banniere_dt.png" alt="" class="menu-background-img">
+        <div class="user-preview-information">
+          
+          
+        </div>
+      </div>
+    </ion-header>
+
+    <ion-content class="menu-content">
+        <ion-menu-toggle>
+          
+          <ul>
+            <li [routerLink]="['/welcome']"><ion-icon name="home-outline"></ion-icon>Accueil</li>
+            <li [routerLink]="['/planning']"><ion-icon name="musical-notes-outline"></ion-icon>Musique</li>
+          </ul>
+          
+          <p>A propos</p>
+        <pre> <a href="https://www.instagram.com/deathless.record/"><ion-icon name="logo-instagram"></ion-icon></a>   <a href="https://www.youtube.com/@deathless.record"><ion-icon name="logo-youtube"> </ion-icon></a></pre>
+          
+          <p><li  (click)="deconexion()">Se déconnecter</li></p>
+        </ion-menu-toggle>
+      </ion-content>
+  </ion-menu>
+  <ion-router-outlet Id="content"></ion-router-outlet>
+</ion-app>

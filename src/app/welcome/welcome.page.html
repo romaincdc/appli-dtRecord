@@ -1,0 +1,28 @@
+<!-- <ion-app class="welcome-app"> -->
+
+<ion-content fullscreen class="welcome-content">
+
+    <img src="/assets/Image/banniere_dt_test.png" alt="" class="welcome-background-img">
+
+    <ion-header class="welcome-header">
+      <ion-toolbar class="toolbar-custom">
+        <ion-menu-button slot="start" type="button"></ion-menu-button>
+      </ion-toolbar>
+    </ion-header>
+
+    <div class="welcome-message">
+      <p>Une app avec que des exclus ?</p>
+      <h3>Bienvenue sur <br><span>Deathless Record</span></h3>
+    </div>
+
+  <!-- <div [routerLink]="['/planning']" class="welcome-start-button">
+    <p>COMMENCER <ion-icon name="arrow-forward-outline"></ion-icon></p>
+  </div> -->
+
+  <ion-button class="welcome-start-button" [routerLink]="['/musique']">
+    COMMENCER <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-button>
+
+</ion-content>
+
+<!-- </ion-app> -->

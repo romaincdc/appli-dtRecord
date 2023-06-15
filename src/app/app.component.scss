@@ -1,0 +1,74 @@
+@import '../theme/pienu-variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #C26807;
+}
+
+ion-menu {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+ion-header .menu-background-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+ion-header .user-section {
+    height: 200px;
+    color: black;
+    position: relative;
+
+    .menu-background-img {
+        position: absolute;
+        z-index: -10;
+        
+    }
+
+    .user-preview-information {
+        height: 100%;
+        border-top-right-radius: 30px;
+        padding: 40px 20px;
+        .user-profile-img {
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background: orange;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+ion-menu-toggle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 50px;
+    background: #000000;
+
+    ul {
+        list-style: none;
+        li {
+            padding: 10px 0;
+            ion-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    ul li:active,
+    ul li:hover,
+    p:active,
+    p:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    } 
+}

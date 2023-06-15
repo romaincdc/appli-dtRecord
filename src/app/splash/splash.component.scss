@@ -1,0 +1,12 @@
+.splash-animation {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+     background-image:  url("../../assets/Image/fond_dt.png");
+    .splash-img {
+        -webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both;
+        
+    }
+    @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+}
